@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .centered{
     display: flex;
@@ -62,4 +63,40 @@ height: 50vh;
 }
 .containerfooter section nav a{
     padding: 10px;
+}
+
+
+/*agrego lo siguiente:*/
+.fijo {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+header{
+    position: sticky;
+    top: 20px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
+    background-color: lightblue;
+    padding: 5px;
+    
+   
+}
+
+.grid-item{
+    background-color: lightcyan;
+    display:inline-block;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;   
+}
+
+div img{
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 100%;
 }
