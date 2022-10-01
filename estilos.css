@@ -101,15 +101,41 @@ div img{
     border-radius: 100%;
 }
 /*Agrego lo siguiente*/
+#conteItemsCarrusel{
+    border: 5px solid black;
+    height: 100%; /*por ahora que tome el 100% del padre que sería section, despues cualquier cosa lo cambiamos*/
+    overflow: hidden;
+}
 .itemCarrusel{
     border: 1px solid black;
-    height: 200px;
+    height: 100%;
+    position: relative; /*Para poder poner a flechasCarrusel respecto a él*/
+    
 }
 .tarjetasCarrusel{
     background-color: blueviolet;
     height: 100%;
 }
 .flechasCarrusel{
-    background-color: bisque;
+    background-color: rgba(112, 112, 251, 0.3);
+    position: absolute; /*va a buscar su elemento mas cercano posicionado no static, elijo a itemCarrusel*/
+    top: 0; /*lo posiciono sobre itemCarrusel*/
     height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+#tarjetasCarrusel-1{
+    background-color: yellow;
+}
+#tarjetasCarrusel-2{
+    background-color: red;
+}
+#tarjetasCarrusel-3{
+    background-color: blue;
+}
+a{
+text-decoration: none;
 }

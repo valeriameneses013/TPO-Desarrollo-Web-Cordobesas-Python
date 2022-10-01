@@ -15,7 +15,8 @@
           <nav>
             <ul>
               <li>
-                <a href="#Inicio">INICIO</a> <!--Aqui tambien le puedo poner a cada "a" la clase centered-->
+                <a href="#Inicio">INICIO</a>
+                <!--Aqui tambien le puedo poner a cada "a" la clase centered-->
               </li>
               <li>
                 <a href="#Materias">MATERIAS</a>
@@ -39,63 +40,70 @@
       <div class="containermain">
         <section id="Inicio">TEXTO MOTIVADOR CON IMAGEN</section>
         <section>
-          <div class="itemCarrusel">
-            A
-            <div class="tarjetasCarrusel"></div>
-            <div class="flechasCarrusel">
-              <i>I</i>
-              <i>D</i>
+          <div id="conteItemsCarrusel">
+            <div class="itemCarrusel" id="itemCarrusel-1">
+              <div class="tarjetasCarrusel" id="tarjetasCarrusel-1">A</div>
+              <div class="flechasCarrusel">
+                <a href="#itemCarrusel-3"><i>I</i></a>
+                <a href="#itemCarrusel-2"><i>D</i></a>
+              </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-2">
+              <div class="tarjetasCarrusel" id="tarjetasCarrusel-2">B</div>
+              <div class="flechasCarrusel">
+                <a href="#itemCarrusel-1"><i>I</i></a>
+                <a href="#itemCarrusel-3"><i>D</i></a>
+              </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-3">
+              <div class="tarjetasCarrusel" id="tarjetasCarrusel-3">C</div>
+              <div class="flechasCarrusel">
+                <a href="#itemCarrusel-2"><i>I</i></a>
+                <a href="#itemCarrusel-1"><i>D</i></a>
+              </div>
             </div>
           </div>
+          <div id="contePuntos" class="centered">
+            <a href="#itemCarrusel-1">°</a>
+            <a href="#itemCarrusel-2">°</a>
+            <a href="#itemCarrusel-3">°</a>
+          </div>
         </section>
-        <section id="Materias"  class="grid-container">
+        <section id="Materias" class="grid-container">
           <div class="grid-item">MATEMATICA</div>
           <div class="grid-item">FISICA</div>
           <div class="grid-item">QUIMICA</div>
           <div class="grid-item">UNIVERSIDAD</div>
         </section>
 
-
-
-
         <section id="Profesores" class="grid-container">
-      
-          <div class="grid-item " >           
-            <img src="./Imagenes/Profe1.jfif" alt="Profesor1">
+          <div class="grid-item">
+            <img src="./Imagenes/Profe1.jfif" alt="Profesor1" />
             <h4>Profe de Matematica</h4>
-          </div>  
-
-          <div class="grid-item ">        
-            <img src="./Imagenes/Profe2.jfif" alt="Profesor2">
-            <h4>Profe de Ingles</h4>
-          </div>          
-
-          <div class="grid-item ">         
-            <img src="./Imagenes/Profe3.jfif" alt="Profesor3">
-            <h4>Profe de Fisica</h4>
-          </div>       
-
-          <div class="grid-item ">      
-            <img src="./Imagenes/Profe5.jfif" alt="Profesor5">
-            <h4>Profe de Quimica</h4>
           </div>
 
+          <div class="grid-item">
+            <img src="./Imagenes/Profe2.jfif" alt="Profesor2" />
+            <h4>Profe de Ingles</h4>
+          </div>
+
+          <div class="grid-item">
+            <img src="./Imagenes/Profe3.jfif" alt="Profesor3" />
+            <h4>Profe de Fisica</h4>
+          </div>
+
+          <div class="grid-item">
+            <img src="./Imagenes/Profe5.jfif" alt="Profesor5" />
+            <h4>Profe de Quimica</h4>
+          </div>
         </section>
-        <section id="Contacto"> CONTACTO
-        </section>
-
-
-
-
-
-
-
+        <section id="Contacto">CONTACTO</section>
       </div>
     </main>
     <footer>
       <div class="containerfooter">
         <section>
-          <a href="#">INFO</a> 
+          <a href="#">INFO</a>
         </section>
         <section>
           <nav class="centered">
