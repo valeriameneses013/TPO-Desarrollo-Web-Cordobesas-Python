@@ -25,10 +25,10 @@ header, main, footer{
     border: 2px solid blueviolet;
     padding: 5px;
 }
-nav{
+/*nav{
     position: sticky;
     top: 0;
-}
+}*/
 nav ul{
     display: flex;
     flex-direction: row;
@@ -47,7 +47,7 @@ nav ul li a {
 }
 .containermain section{
 border: 2px solid blue;
-height: 50vh;
+height: 80vh;
 }
 .containerfooter{
     display: flex;
@@ -83,8 +83,6 @@ header{
     grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
     background-color: lightblue;
     padding: 5px;
-    
-   
 }
 
 .grid-item{
@@ -94,22 +92,23 @@ header{
     text-align: center;
     border: 1px solid black;   
 }
-
-div img{
+div > img{
     width: 50%;
     border: 1px solid black;
     border-radius: 100%;
 }
-/*Agrego lo siguiente*/
+
 #conteItemsCarrusel{
     border: 5px solid black;
-    height: 100%; /*por ahora que tome el 100% del padre que sería section, despues cualquier cosa lo cambiamos*/
+    height: 95%; /*por ahora que tome el 100% del padre que sería section, despues cualquier cosa lo cambiamos*/
     overflow: hidden;
 }
 .itemCarrusel{
-    border: 1px solid black;
+    border: 5px solid aqua;
     height: 100%;
-    position: relative; /*Para poder poner a flechasCarrusel respecto a él*/
+    width: 100%;
+    display: flex;
+    /*position: relative; Para poder poner a flechasCarrusel respecto a él*/
     
 }
 .tarjetasCarrusel{
@@ -118,8 +117,8 @@ div img{
 }
 .flechasCarrusel{
     background-color: rgba(112, 112, 251, 0.3);
-    position: absolute; /*va a buscar su elemento mas cercano posicionado no static, elijo a itemCarrusel*/
-    top: 0; /*lo posiciono sobre itemCarrusel*/
+    /*position: absolute; va a buscar su elemento mas cercano posicionado no static, elijo a itemCarrusel*/
+    /*top: 0; lo posiciono sobre itemCarrusel*/
     height: 100%;
     width: 100%;
     display: flex;
@@ -138,4 +137,14 @@ div img{
 }
 a{
 text-decoration: none;
+}
+#contePuntos>a {
+font-size: 2em;
+}
+section>img{
+    width: 100%;
+    height: 100%;
+}
+.tarjetasCarrusel img{
+    width: 25%;
 }
