@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/159db0ef4c.js"
       crossorigin="anonymous"
@@ -226,7 +227,36 @@
             <h4>Profe de Quimica</h4>
           </div>
         </section>
-        <section id="Contacto">CONTACTO</section>
+        <section id="conteContacto" class="centered">
+          <form action="" method="get" class="form_contacto">
+            <div class="form_group">
+              <input id="Nombre" type="text" name="Nombre" class="form_input" maxlength="50" placeholder="Nombre">
+              <label for="Nombre" class="form_label"></label>
+              <span class="form_line"></span>
+            </div>  
+            <div class="form_group">
+              <input id="Email" type="email" name="Email" class="form_input" required placeholder="Email">
+              <label for="Email" class="form_label"></label>
+              <span class="form_line"></span>
+            </div>  
+            <div class="form_group">
+              <input id="Telefono" type="tel" name="Telefono" class="form_input" placeholder="Telefono">
+              <label for="Telefono" class="form_label"></label>
+              <span class="form_line"></span>
+            </div>  
+
+            <div class="form_group">
+              <input id="Asunto" type="text" name="Asunto" class="form_input" placeholder="Asunto">
+              <label for="Asunto" class="form_label"></label>
+              <span class="form_lime"></span>
+            </div>
+
+            <div class="form_group">
+              <textarea name="Mensaje" id="Mensaje" cols="20" rows="3" name="Mensaje" class="form_input" placeholder="Mensaje"></textarea>
+            </div>
+            <input type="submit" class="form_submit" value="ENVIAR CONSULTA">
+          </form>
+        </section>
       </div>
     </main>
     <footer>
