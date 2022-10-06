@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: lightblue;
+}
+nav, ul, li, a{
+    text-decoration: none;  
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main{
+    background-color:lightcyan;
+}
+
+footer{
+    background-color: lightgoldenrodyellow;
+}
+
+.containerheader{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    padding: 5px;
+    align-items: left;
+    padding: 15px;
+}
+
+#titulo{
+    padding: 5px;
+    margin: 5px;
+}
+label{
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+input{
+    border-radius: 50px;
+    padding: 5px;
+    width: 250px;
+}
+
+.btn{
+    cursor: pointer;
+    width: 100px;
+}
+.btn:hover{
+    background-color: lightsalmon;
+    transition-duration: 2s;
+}
+
+form div{
+    padding: 5px;
+}

@@ -181,9 +181,8 @@ section>img{
     transition: all 0,6s ease;
 }
 #conteContacto{
-    border: 5px solid black;
-    height: 95%; /*por ahora que tome el 100% del padre que sería section, despues cualquier cosa lo cambiamos*/
-    overflow: auto;
+    border: 1px solid black;
+    overflow: hidden;
 }
 .form_contacto{
     width: 100%;
@@ -232,6 +231,7 @@ form input, textarea{
     padding: .5em 1em;
     border-radius: .5em;
     margin: auto;
+    cursor: pointer;
 }
 .form_line{
     position: absolute;    
@@ -241,4 +241,44 @@ form input, textarea{
 }
 @media (max-width:425px){
 
+}
+
+.grid-container-contacto{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 2fr));
+    background-color: grey;
+    padding: 16px;
+    margin: 5px;
+    box-sizing: border-box;
+    }
+
+.grid-item-contacto{
+    background-color: lightpink;
+    display:inline-block;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid black; 
+}
+.map{
+    width: 70%;
+    height: 70%;
+    position: relative;
+    margin-top: 20px;
+   
+}
+
+.numC{
+    text-align: left;
+    padding: 20px;
+
+}
+numC, h4{
+    text-decoration: underline;
+}
+
+.volver{
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+    padding: 25px;
 }

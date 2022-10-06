@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="./estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/159db0ef4c.js"
@@ -33,7 +33,7 @@
                 <a href="#Contacto">CONTACTO</a>
               </li>
               <li>
-                <a href="./registro.html">REGISTRO</a>
+                <a href="./registro.html" target="_blank">REGISTRO</a>
               </li>
             </ul>
           </nav>
@@ -50,7 +50,7 @@
         </section>
 
         <section>            
-          <nav><a href="iniciosesion.html">INICIAR SESION</a></nav>
+          <nav><a href="iniciosesion.html" target="_blank">INICIAR SESION</a></nav>
         </section>
         
       </div>
@@ -227,10 +227,11 @@
             <h4>Profe de Quimica</h4>
           </div>
         </section>
-        <section id="conteContacto" class="centered">
+        <section id="Contacto" class="grid-container-contacto">
+          <div id="conteContacto" class="grid-item-contacto">
           <form action="" method="get" class="form_contacto">
-            <div class="form_group">
-              <input id="Nombre" type="text" name="Nombre" class="form_input" maxlength="50" placeholder="Nombre">
+            <div class="form_group"> <!--NO HAY ESTILO EN CSS DE .FORM_GROUP, PUEDE SER??-->
+              <input id="Nombre" type="text" name="Nombre" class="form_input" maxlength="50" placeholder="Nombre" required>
               <label for="Nombre" class="form_label"></label>
               <span class="form_line"></span>
             </div>  
@@ -240,22 +241,36 @@
               <span class="form_line"></span>
             </div>  
             <div class="form_group">
-              <input id="Telefono" type="tel" name="Telefono" class="form_input" placeholder="Telefono">
+              <input id="Telefono" type="tel" name="Telefono" class="form_input" placeholder="Telefono" required>
               <label for="Telefono" class="form_label"></label>
               <span class="form_line"></span>
             </div>  
 
             <div class="form_group">
-              <input id="Asunto" type="text" name="Asunto" class="form_input" placeholder="Asunto">
+              <input id="Asunto" type="text" name="Asunto" class="form_input" placeholder="Asunto" required>
               <label for="Asunto" class="form_label"></label>
               <span class="form_lime"></span>
             </div>
 
             <div class="form_group">
-              <textarea name="Mensaje" id="Mensaje" cols="20" rows="3" name="Mensaje" class="form_input" placeholder="Mensaje"></textarea>
+              <textarea name="Mensaje" id="Mensaje" cols="20" rows="3" name="Mensaje" class="form_input" placeholder="Mensaje" required></textarea>
             </div>
             <input type="submit" class="form_submit" value="ENVIAR CONSULTA">
           </form>
+        </div>
+
+        <div class="grid-item-contacto">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26463.56770629921!2d-64.20455815149991!3d-31.417538048255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28e5b9d7fe5%3A0x284de6f3d7b8a60!2sMuseo%20Superior%20de%20Bellas%20Artes%20%7C%20Palacio%20Ferreyra!5e0!3m2!1ses-419!2sar!4v1665025331512!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <div class="numC"> 
+            <h4>Teléfonos de contacto</h4>
+            <p>Casa central (0351) - 11 -111 111</p>
+            <p>Atención Alumnos (0351) - 11 -111 111</p>
+            <p>Atención Profesores (0351) - 11 -111 111</p>
+          </div>
+
+        </div>
+
         </section>
       </div>
     </main>

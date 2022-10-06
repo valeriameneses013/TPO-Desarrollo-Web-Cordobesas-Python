@@ -4,10 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./estilos2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/159db0ef4c.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Registro</title>
 </head>
 <body>
-     <a href="./index.html#Contacto">Ir a Contacto</a> 
+
+  <header class="containerheader">
+        <nav>
+            <ul>
+              <li>
+                <a href="./index.html#Profesores #Inicio" target="_blank">INICIO</a>
+              </li>
+              <li>
+                <a href=" ./index.html#Profesores#Materias" target="_blank">MATERIAS</a>
+              </li>
+              <li>
+                <a href="./index.html#Profesores" target="_blank">PROFESORES</a>
+              </li>
+              <li>
+                <a href="./index.html#Contacto" target="_blank" >CONTACTO</a>
+              </li>
+
+            </ul>
+          </nav>
+
+  </header>
+
+  <main class="containerheader"> 
+    <h2 id="titulo">Registrate en nuestra academia en pocos pasos:</h2>     
+      <div>
+       <form action="" method="get">
+        <div>
+         <label for="nombre">Nombre: </label>
+         <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        </div>
+        <div>
+         <label for="Apellido">Apellido: </label>
+         <input type="text" name="Apellido" id="Apellido" placeholder="Apellido" required>
+        </div>
+        <div>
+          <label for="Edad">Edad: </label>
+          <input type="number" name="Edad" id="Edad" min="0" max="100" placeholder="Edad" required>
+        </div>
+        <div>
+          <label for="Fecha">Fecha de Nac.: </label>
+          <input type="date" name="Fecha" id="Fecha" placeholder="Fecha de Nacimiento" required>
+         </div>
+         <div>
+          <label for="Mail">E-mail: </label>
+          <input type="email" name="Mail" id="Mail" placeholder="Mail de contacto" required>
+         </div>
+         <div>
+          <label for="PassW">Contraseña: </label>
+          <input type="password" name="PassW" id="PassW" placeholder="Contraseña" required>
+         </div>
+
+         <div >
+           <input class="btn" type="submit" class="form_submit" value="Registrarse">
+          </div>
+        </form>
+    </div>
+
+  </main>
+
+  <footer class="containerheader"> 
+    <div>
+        <i class="fa-solid  fa-arrow-left"></i>   
+       <a href="./index.html#Contacto">Ir a Contacto</a> 
+    </div>
+
+  </footer>
+
 </body>
 </html>
