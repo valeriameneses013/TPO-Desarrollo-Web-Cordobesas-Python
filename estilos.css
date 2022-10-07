@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 .centered{
     display: flex;
@@ -247,17 +248,18 @@ form input, textarea{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 2fr));
     background-color: grey;
-    padding: 16px;
+    padding: 10px;
     margin: 5px;
     box-sizing: border-box;
     }
 
 .grid-item-contacto{
     background-color: lightpink;
-    display:inline-block;
-    margin: 20px;
+    display: inline-block;
+    margin: 10px;
     text-align: center;
     border: 1px solid black; 
+    overflow-y: auto;
 }
 .map{
     width: 70%;
