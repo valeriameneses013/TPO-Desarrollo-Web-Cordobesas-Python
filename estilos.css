@@ -66,7 +66,9 @@ height: 80vh;
 .containerfooter section nav a{
     padding: 10px;
 }
-
+.containerfooter section nav a img{
+    width: 30px;
+}
 
 /*agrego lo siguiente:*/
 .fijo {
@@ -248,25 +250,24 @@ form input, textarea{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 2fr));
     background-color: grey;
-    padding: 10px;
-    margin: 5px;
+    padding: 5px;
+    margin: 20px;
     box-sizing: border-box;
     }
 
 .grid-item-contacto{
     background-color: lightpink;
     display: inline-block;
-    margin: 10px;
+    margin: 20px;
     text-align: center;
     border: 1px solid black; 
     overflow-y: auto;
 }
 .map{
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
     position: relative;
     margin-top: 20px;
-   
 }
 
 .numC{
@@ -283,4 +284,7 @@ numC, h4{
     color: #000;
     text-align: right;
     padding: 25px;
+} 
+.containerfooter ul li{
+    list-style-type: none;
 }
