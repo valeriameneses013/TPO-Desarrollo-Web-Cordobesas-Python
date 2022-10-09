@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Imagenes/pila-de-libros-colegio-11367386.ico">
     <link rel="stylesheet" href="./estilos2.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script
@@ -14,14 +15,14 @@
 </head>
 <body>
 
-  <header class="containerheader">
+  <header class="containerheader centered">
         <nav>
             <ul>
               <li>
-                <a href="./index.html#Profesores #Inicio" target="_blank">INICIO</a>
+                <a href="./index.html#Inicio" target="_blank">INICIO</a>
               </li>
               <li>
-                <a href=" ./index.html#Profesores#Materias" target="_blank">MATERIAS</a>
+                <a href=" ./index.html#Materias" target="_blank">MATERIAS</a>
               </li>
               <li>
                 <a href="./index.html#Profesores" target="_blank">PROFESORES</a>
@@ -35,49 +36,99 @@
 
   </header>
 
-  <main class="containerheader"> 
-    <h2 id="titulo">Registrate en nuestra academia en pocos pasos:</h2>     
-      <div>
+  <main> 
+    <section class="containerheader" >       
+      <div class="containeritem">
+        <h2 class="titulo">Regístrate en nuestra academia en pocos pasos:</h2>     
        <form action="" method="get">
         <div>
-         <label for="nombre">Nombre: </label>
-         <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+         <label for="nombre"> </label>
+         <input class="form_input" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
         </div>
         <div>
-         <label for="Apellido">Apellido: </label>
-         <input type="text" name="Apellido" id="Apellido" placeholder="Apellido" required>
+         <label for="Apellido"></label>
+         <input class="form_input"  type="text" name="Apellido" id="Apellido" placeholder="Apellido" required>
         </div>
         <div>
-          <label for="Edad">Edad: </label>
-          <input type="number" name="Edad" id="Edad" min="0" max="100" placeholder="Edad" required>
+          <label for="Edad"> </label>
+          <input class="form_input"   type="number" name="Edad" id="Edad" min="0" max="100" placeholder="Edad" required>
         </div>
         <div>
-          <label for="Fecha">Fecha de Nac.: </label>
-          <input type="date" name="Fecha" id="Fecha" placeholder="Fecha de Nacimiento" required>
+          <label for="Fecha"></label>
+          <input class="form_input"  type="date" name="Fecha" id="Fecha" placeholder="Fecha de Nacimiento" required>
          </div>
          <div>
-          <label for="Mail">E-mail: </label>
-          <input type="email" name="Mail" id="Mail" placeholder="Mail de contacto" required>
+          <label for="Mail"></label>
+          <input class="form_input"  type="email" name="Mail" id="Mail" placeholder="Mail de contacto" required>
          </div>
          <div>
-          <label for="PassW">Contraseña: </label>
-          <input type="password" name="PassW" id="PassW" placeholder="Contraseña" required>
+          <label for="PassW"></label>
+          <input class="form_input"  type="password" name="PassW" id="PassW" placeholder="Contraseña" required>
          </div>
 
          <div >
            <input class="btn" type="submit" class="form_submit" value="Registrarse">
           </div>
         </form>
-    </div>
+     </div>
+
+     <div class="containeritem">
+      <h2 class="titulo"> <i class="fa-solid fa-music"></i> ¡Recomendación!</h2>
+      <p>Descubre nueva música para concentrarte y vivir la experiencia de estudiar al máximo</p>
+      <iframe class="video" src="https://www.youtube.com/embed/YE9C1szqW5o" title="Music to Study, Concentrate and Memorize Fast ☯ Alpha Waves ☯ Relaxing Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+
+    </section>
 
   </main>
 
-  <footer class="containerheader"> 
-    <div>
-        <i class="fa-solid  fa-arrow-left"></i>   
-       <a href="./index.html#Contacto">Ir a Contacto</a> 
-    </div>
 
+
+  <footer>
+    <div class="containerfooter">
+      <section>
+        <div class="centered">
+          <ul>
+            <li>
+              <a href="./index.html#Inicio">INICIO</a>
+              </li>
+            <li>
+              <a href="./index.html#Materias">MATERIAS</a>
+            </li>
+            <li>
+              <a href="./index.html#Profesores">PROFESORES</a>
+            </li>
+            <li>
+              <a href="./index.html#Contacto">CONTACTO</a>
+            </li>
+            <li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <nav class="centered">
+          <a target="_blank" href="https://facebook.com"
+            ><img src="./imagenes/facebook.png" alt="facebook"
+          /></a>
+          <a target="_blank" href="https://instagram.com"
+            ><img src="./imagenes/instagram.png" alt="instagram"
+          /></a>
+          <a class="fijo" target="_blank" href="https://whatsapp.com"
+            ><img src="./imagenes/whatsapp.png" alt="whatsapp"
+          /></a>
+          <a target="_blank" href="https://twitter.com"
+            ><img src="./imagenes/twitter.png" alt="twitter"
+          /></a>
+        </nav>
+      </section>
+      <section class="lio">        
+        <span class="centered"> <i class="fa-solid fa-2x fa-arrow-left"></i>   </span>
+        <div class="containerheader">          
+         <a href="./index.html#Contacto" >
+            Ir a Contacto</a>           
+      </div>
+      </section>
+    </div>
   </footer>
 
 </body>
