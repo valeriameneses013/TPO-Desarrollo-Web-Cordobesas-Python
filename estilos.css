@@ -9,11 +9,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 header, main, footer{
     border: 5px solid black;
     margin: 10px;
 }
+
+.logo{
+    margin: 5px;
+    width: 20%;
+    height: 50%;
+}
+
 .containerheader{
     display: flex;
     flex-direction: row;
@@ -26,11 +34,9 @@ header, main, footer{
 .containerheader section{
     border: 2px solid blueviolet;
     padding: 5px;
+          
 }
-nav{
-    position: sticky;
-    top: 0;
-}
+
 nav ul{
     display: flex;
     flex-direction: row;
@@ -82,24 +88,27 @@ height: 80vh;
     right: 25px;
 }
 
-header{
+/*header{
     position: sticky;
     top: 0px;
 }
-
+*/
 .grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
     background-color: lightblue;
     padding: 5px;
+    margin: 10px;
 }
 
 .grid-item{
     background-color: lightcyan;
     display:inline-block;
     padding: 20px;
+    margin: 10px;
     text-align: center;
     border: 1px solid black;   
+    
 }
 div > img{
     width: 50%;
@@ -274,6 +283,7 @@ form input, textarea{
     height: 60%;
     position: relative;
     margin-top: 20px;
+   
 }
 
 .numC{
@@ -293,4 +303,45 @@ numC, h4{
 } 
 .containerfooter ul li{
     list-style-type: none;
+    display: inline-block;
 }
+
+header a:visited{
+    color: blue
+}
+
+header a:hover{
+    color:darksalmon;
+}
+
+header a:active{
+    color:white;
+    background-color: grey;
+    
+}
+
+footer a:visited{
+    color: blue
+}
+
+footer a:hover{
+    color:darksalmon;
+}
+
+footer a:active{
+    color:white;
+    background-color: grey;
+    
+}
+
+.efecto{
+    cursor: pointer;
+    width: 150px;
+    border-radius: 50px;
+}
+
+.efecto:hover{
+    background-color: lightsalmon;
+    transition-duration: 2s;
+}
+
