@@ -79,13 +79,14 @@ height: 80vh;
 .par{
     padding: 10px;
     text-align: justify;
+ 
 }
 
 
 .fijo {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 50px;
+    right: 50px;  
 }
 
 /*header{
@@ -95,25 +96,46 @@ height: 80vh;
 */
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
+    gap: 1rem;
+    grid-auto-columns: 13rem;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
     background-color: lightblue;
     padding: 5px;
     margin: 10px;
+
 }
 
 .grid-item{
-    background-color: lightcyan;
-    display:inline-block;
+    background-color: pink;
+    display: inline-grid;
     padding: 20px;
     margin: 10px;
     text-align: center;
-    border: 1px solid black;   
+    border: 1px solid black;  
+ 
+
+    
     
 }
 div > img{
     width: 50%;
     border: 1px solid black;
     border-radius: 100%;
+}
+
+.tem{
+    padding:10px;
+    display: grid;
+    grid-template-columns: minmax(0,auto);
+  
+     
+}
+
+grid-item tem, ul li{
+    list-style-type: none; 
+    font-size: 0,3em;
+    text-align: left;
+
 }
 
 #conteItemsCarrusel{
@@ -254,6 +276,7 @@ form input, textarea{
     left: 0;
     width: 100%;
 }
+
 @media (max-width:425px){
 
 }

@@ -141,12 +141,3 @@ footer a:active{
     width: 70%;
     height: 300px;
 }
-
-/*ESTO ES DESPROLIJO PERO ES PARA PENSAR COMO RESOLVERLO MEJOR..
-DE AHI EL NOMBRE DE LA CLASE "LIO" */
-.lio{
-    padding: 5px;
-    cursor: pointer;
-}
-
-
