@@ -79,13 +79,14 @@ nav ul li a {
 .par{
     padding: 10px;
     text-align: justify;
+ 
 }
 
 
 .fijo {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 50px;
+    right: 50px;  
 }
 
 /*header{
@@ -93,28 +94,8 @@ nav ul li a {
     top: 0px;
 }
 */
-/* Apago para probar responsive*/
+/*Apago para probar responsive*/
 /*
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
-    background-color: lightblue;
-    padding: 5px;
-    margin: 10px;
-}
-
-.grid-item{
-    background-color: lightcyan;
-    display:inline-block;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    border: 1px solid black;   
-    
-}
-*/
-
-/*Termino apagado para probar responsive*/
 .grid-container{
     display: flex;
     flex-direction: column;
@@ -123,6 +104,7 @@ nav ul li a {
     padding: 5px;
     margin: 10px;
 }
+
 .grid-item{
     background-color: lightcyan;
     display:flex;
@@ -133,12 +115,50 @@ nav ul li a {
     border: 1px solid black;   
     
 }
+*/
+
+/*Termino apagado para probar responsive*/
 div > img{
     width: 10%;
     border: 1px solid black;
     border-radius: 100%;
 }
 
+.tem{
+    padding:10px;
+    display: grid;
+    grid-template-columns: minmax(0,auto);
+  
+     
+}
+a{
+    text-decoration: none;
+    }
+
+grid-item tem, ul li{
+    list-style-type: none; 
+    font-size: 0,3em;
+    text-align: left;
+
+}
+
+
+/* agrego estilos slider*/
+#tarjetas{
+    border: 5px solid green;
+    width: 100%;
+    height: auto;
+    margin: 0px auto 1em;
+    overflow: hidden;    
+}
+.container{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    height: auto;
+
+    animation: slide 16s infinite alternate ease-in-out;
+}
 
 a{
 text-decoration: none;
@@ -285,25 +305,8 @@ form input, textarea{
     width: 100%;
 }
 
-/*
-.grid-container-contacto{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25px, 2fr));
-    background-color: grey;
-    padding: 5px;
-    margin: 20px;
-    box-sizing: border-box;
-    }
 
-.grid-item-contacto{
-    background-color: lightpink;
-    display: inline-block;
-    margin: 20px;
-    text-align: center;
-    border: 1px solid black; 
-    overflow-y: auto;
-}
-*/
+
 .grid-container-contacto{
     display: flex;
     flex-direction: row;
