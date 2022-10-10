@@ -95,7 +95,7 @@ nav ul li a {
 }
 */
 /*Apago para probar responsive*/
-/*
+
 .grid-container{
     display: flex;
     flex-direction: column;
@@ -115,7 +115,6 @@ nav ul li a {
     border: 1px solid black;   
     
 }
-*/
 
 /*Termino apagado para probar responsive*/
 div > img{
@@ -128,46 +127,19 @@ div > img{
     padding:10px;
     display: grid;
     grid-template-columns: minmax(0,auto);
-  
-     
 }
 a{
     text-decoration: none;
     }
-
+section>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
 grid-item tem, ul li{
     list-style-type: none; 
     font-size: 0,3em;
     text-align: left;
-
-}
-
-
-/* agrego estilos slider*/
-#tarjetas{
-    border: 5px solid green;
-    width: 100%;
-    height: auto;
-    margin: 0px auto 1em;
-    overflow: hidden;    
-}
-.container{
-    display: flex;
-    padding: 0;
-    width: 400%;
-    height: auto;
-
-    animation: slide 16s infinite alternate ease-in-out;
-}
-
-a{
-text-decoration: none;
-}
-
-section>img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 /* agrego estilos slider*/
 #tarjetas{
@@ -185,6 +157,7 @@ section>img{
 
     animation: slide 16s infinite alternate ease-in-out;
 }
+
 .tarjeta{
     border: 1px solid black;
     width: 100%;
