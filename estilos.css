@@ -55,7 +55,7 @@ nav ul li a {
 }
 .containermain section{
     border: 2px solid blue;
-    height: 80vh;
+    height:auto;
 }
 .containerfooter{
     display: flex;
@@ -94,23 +94,14 @@ nav ul li a {
     top: 0px;
 }
 */
-/*Apago para probar responsive*/
-
-
-
-
-
-
 
 .grid-container{
     display: flex;
-    background-color: dodgerblue;
-    justify-content: space-around;   
     flex-direction: row;
-    height:auto;
-  
-    
-  
+    flex-wrap: wrap;
+    background-color: dodgerblue;
+    justify-content: space-around; 
+    align-items: center;/*Probando para que no desborde*/
 }
 
 .grid-item{
@@ -124,16 +115,9 @@ nav ul li a {
     flex-wrap: wrap;
     align-self: stretch;
     height:auto;
-
+    justify-content: space-around;/*Probando para que no desborde*/
 }
 
-
-
-
-
-
-
-/*Termino apagado para probar responsive*/
 div > img{
     width: 10%;
     border: 1px solid black;
