@@ -28,7 +28,7 @@ footer{
     outline: none;
     border-bottom: 1px solid grey;
     font-size: 1rem;
-    width: 55%;
+    max-width:max-content;
 }
 
 .containerheader{
@@ -39,11 +39,17 @@ footer{
     align-items:left;
     justify-content: space-around;
 }
-
+.containermain{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
 .containeritem{
-        width: 50%;
-    height: 50%;
-    padding: 5px;
+    margin: 1em;
+    padding: 1em;
+    overflow-x: auto;    
 }
 .titulo{
     padding: 5px;
@@ -87,48 +93,35 @@ form div{
 }
 
 
-header a:visited{
+a:visited{
     color: blue
 }
 
-header a:hover{
+a:hover{
     color:darksalmon;
 }
 
-header a:active{
+a:active{
     color:white;
     background-color: grey;
-    
-}
-
-footer a:visited{
-    color: blue
-}
-
-footer a:hover{
-    color:darksalmon;
-}
-
-footer a:active{
-    color:white;
-    background-color: grey;
-    
 }
 
 .containerfooter{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 5px;
+    padding: 0.5em;
     justify-content: space-around;
     align-items: center;
     border: 3px solid green;
-    padding: 15px;
-    height: 150px;
+    padding: 1em;
+    width: 100%;
+    height: auto;
 }
 
 .containerfooter section{
     border: 2px solid maroon;
+    overflow-x: auto;
 }
 .containerfooter section nav a{
     padding: 10px;
@@ -136,8 +129,12 @@ footer a:active{
 .containerfooter section nav a img{
     width: 30px;
 }
+.containeritem iframe{
+    border: 1px solid black;
+    width: auto;
+}
+iframe{
 
-.video{
-    width: 70%;
-    height: 300px;
+    width: 50vw;
+    height: 50vh;    
 }
