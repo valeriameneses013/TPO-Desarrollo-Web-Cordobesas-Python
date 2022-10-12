@@ -100,4 +100,3 @@ fetch(url)
      `
     /* TERMINA FOOTER */
 
-    

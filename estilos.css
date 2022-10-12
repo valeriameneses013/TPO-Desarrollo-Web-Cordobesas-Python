@@ -109,8 +109,8 @@ nav ul li a {
 .grid-item{
     background-color: lightgreen; 
     border: 1px solid black;
-    padding: 20px;
-    margin: 25px;
+    padding: 5px;
+    margin: 10px;
     flex: 1;
  
     text-align: center;
@@ -226,10 +226,10 @@ grid-item tem, ul li{
 }
 */
 .form_contacto{
-    width: 70%;
-    height: 70%;
-    max-width: 600px;
-    padding: .2em;
+    width: 90%;
+    height: 90%;
+   /* max-width: 600px;
+    padding: .2em;*/
 }
 .form{
     margin: auto;
@@ -299,20 +299,11 @@ form input, textarea{
 */
 
 .map{
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
    
-}
-
-.numC{
-    text-align: left;
-    padding: 20px;
-
-}
-numC, h4{
-    text-decoration: underline;
 }
 
 .volver{
@@ -365,3 +356,22 @@ footer a:active{
     transition-duration: 2s;
 }
 
+/*estilos tarjetas profes*/
+.containerTarjetaProfes{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+}
+.tarjetaProfes{
+    border: 1px solid rgb(167, 167, 165);
+    margin: 10px;
+    border-radius: 5%;
+}
+.cuerpoTarjetaProfes{
+    padding: 10px;
+}
+.tarjetaProfes img{
+    border-radius: 50%;
+    width: 25%;
+        
+}

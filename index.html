@@ -168,7 +168,7 @@
                 </ul>
               </div>
               <p>Haz click aquí para más información
-                <a target="_blank" href="./materias.html#Uni" <i class="fa-sharp fa-solid fa-graduation-cap"</i></a>
+                <a target="_blank" href="./materias.html#Uni" ><i class="fa-sharp fa-solid fa-graduation-cap"></i></a>
               </p>
             </div>
           </div>
@@ -176,32 +176,20 @@
 
         <h2 class="centered">STAFF DE PROFESORES</h2>
 
-        <section id="Profesores" class="grid-container">
-          <div class="grid-item">
-            <img src="./Imagenes/Profe1.jfif" alt="Profesor1" />
-            <h4>Prof. de Matemática</h4>
-              <p class="par">Me llamo Juan Carlos, y las Matemáticas son mi pasión desde que tengo uso de razón. Mi carrera está enfocada en transmitir todos mis conocimientos y demostrar que cualquier persona puede aprender! ¡Las matemáticas requieren práctica pero no son imposibles!</p>
+        <section id="Profesores"  class="grid-container">
+         
+          <div id="app">
+            <div class="containerTarjetaProfes">
+              <div v-for="profesor in arregloProfes" class="tarjetaProfes">
+                <img :src="profesor.imagen" alt="imagen">
+                <div class="cuerpoTarjetaProfes">
+                  <h4>{{profesor.nombre}}</h4>
+                  <p>{{profesor.experiencia}}</p>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="grid-item">
-            <img src="./Imagenes/Profe2.jfif" alt="Profesor2" />
-            <h4>Prof. de Química</h4>
-            <p class="par"> Mi nombre es Carolina y tengo 10 años de experiencia enseñando Química en Secundarios y de manera particular a alumnos de diferentes edades. Mi interés por la química comenzó cuando conocí la historia de Louis Pasteur, Robert Boyle y Antoine Lavoisier.              
-          </p>
-          </div>
-
-          <div class="grid-item">
-            <img src="./Imagenes/Profe3.jfif" alt="Profesor3" />
-            <h4>Prof. de Física</h4>
-            <p class="par"> ¡Hola a todos! Me llamo Zulma y soy Profesora de Física formada en la UTN. Doy clases en la Universidad y en los terciaros del Centro de Córdoba desde hace 5 años. Me recibí con diploma de honor y en mis comienzos tuve la suerte de trabajar codo a codo junto Marie Curie, Niels Bohr y Michael Faraday.</p>
-          </div>
-
-          <div class="grid-item">
-            <img src="./Imagenes/Profe5.jfif" alt="Profesor5" />
-            <h4>Ingreso a la Universidad</h4>
-            <p class="par"> Me llamo Roberto y soy el consejero académico de la Institución______. En otras palabras, mi trabajo es acompañar y orientar a los estudiantes en la selección de su carrera universitaria tomando en cuenta su educación, gustos y disponibilidad horaria.
-             </p>
-          </div>
+          
         </section>
 
         <h2 class="centered">CONTACTANOS</h2>
@@ -291,14 +279,11 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-
-            <div class="numC">
-              <h4>Vías de contacto</h4>
-              <p> <i class="fa-solid fa-phone"></i> Atención Profesores (0351) - 11 -111 111</p>
-              <p> <i class="fa-solid fa-phone"></i> Atención Alumnos (0351) - 11 -111 111</p>
-              <p> <i class="fa-solid fa-at"></i>  
-               enviatuconsultar@instituto.com.ar</p>
-            </div>
+            <h4>Vías de contacto</h4>
+            <p> <i class="fa-solid fa-phone"></i> Atención Profesores (0351) - 11 -111 111</p>
+            <p> <i class="fa-solid fa-phone"></i> Atención Alumnos (0351) - 11 -111 111</p>
+            <p> <i class="fa-solid fa-at"></i>enviatuconsultar@instituto.com.ar</p>
+            
           </div>
         </section>
       </div>
@@ -354,6 +339,8 @@
         </section>
       </div>
     </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="maintp.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
