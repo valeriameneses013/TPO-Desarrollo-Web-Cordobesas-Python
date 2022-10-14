@@ -144,30 +144,32 @@ grid-item tem, ul li{
     font-size: 0,3em;
     text-align: left;
 }
-/* agrego estilos slider*/
+
+/* agrego estilos slider chico*/
 #tarjetas{
     border: 5px solid green;
     width: 100%;
     height: 100%;
-    margin: 0px auto 1em;
+    margin: 0px auto;
     overflow: hidden;    
 }
 .container{
     display: flex;
     padding: 0;
-    width: 400%;
+    width: 600%;
     height: auto;
 
-    animation: slide 16s infinite alternate ease-in-out;
+    animation: slide 36s infinite alternate ease-in-out;
 }
 
 .tarjeta{
-    border: 1px solid black;
+    border: 1px solid grey;
     width: 100%;
     height: auto;
+    margin: 1em;
     padding: 1em;
     border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);
+    box-shadow: 0 10px 10px 0px rgba(54, 43, 94, 0.8);
 }
 .tarjeta img{
     border-radius: 50%;
@@ -180,20 +182,70 @@ grid-item tem, ul li{
 }
 @keyframes slide {
     0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
+    10% {margin-left: 0%;}
 
+    15% {margin-left: -100%;}
     25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
 
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
+    30% {margin-left: -200%;}
+    45% {margin-left: -200%;}
 
-    75% {margin-left: -300%;}
-    95% {margin-left: -300%;}
+    50% {margin-left: -300%;}
+    60% {margin-left: -300%;}
+
+    65% {margin-left: -400%;}
+    75% {margin-left: -400%;}
+
+    80% {margin-left: -500%;}
+    90% {margin-left: -500%;}
 }
-/*termina estilos slider*/
+/*termina estilos slider chico*/
 
+/* agrego estilos slider mediano*/
+@media screen and (min-width: 768px){
 
+.container{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    height: auto;
+
+    animation: slide 18s infinite alternate ease-in-out;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    30% {margin-left: 0%;}
+
+    35% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    95% {margin-left: -200%;}
+}
+}
+/*termina estilos slider mediano*/
+
+@media screen and (min-width: 992px) {
+/* agrego estilos slider grande*/
+
+.container{
+    display: flex;
+    padding: 0;
+    width: 200%;
+    height: auto;
+
+    animation: slide 30s infinite alternate ease-in-out;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    45% {margin-left: 0%;}
+
+    50% {margin-left: -100%;}
+    95% {margin-left: -100%;}
+}
+/*termina estilos slider grande*/
 .buscar{
     display: flex;
     flex-direction: row;

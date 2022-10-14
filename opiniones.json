@@ -23,6 +23,18 @@
             "opinion": "Tienen mucha disponibilidad de horarios, lo que me permitió flexibilizar las clases con mi trabajo y estudio. Muy buenos todos los profesores que me tocaron.",
             "imagen": "./Imagenes/alumno4.jpg",
             "id": 4
+        },
+        {   "nombre": "Sebastian",
+            "apellido": "P.",
+            "opinion": "Elegí la academia para preparar a mi hijo en ingreso a FAMAF, estuvo listo para rendir en el tiempo estipulado y obtuvo muy buena calificación, gracias!.",
+            "imagen": "./Imagenes/alumno5.jpg",
+            "id": 5
+        },
+        {   "nombre": "Julia",
+            "apellido": "Cantelmi",
+            "opinion": "Muy flexibles y dispuestos a resolver inquietudes de inmediato.",
+            "imagen": "./Imagenes/alumno6.jpg",
+            "id": 6
         }
     ]
 }
