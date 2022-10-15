@@ -34,7 +34,7 @@
     <section class="containermain" >       
       <div class="containeritem">
         <h2 class="titulo">Regístrate en nuestra academia en pocos pasos:</h2>     
-       <form action="" method="get">
+       <form id="form" action="https://formspree.io/f/mknezlbq" method="POST">
         <div>
          <label for="nombre"> </label>
          <input class="form_input" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
@@ -53,11 +53,20 @@
          </div>
          <div>
           <label for="Mail"></label>
-          <input class="form_input"  type="email" name="Mail" id="Mail" placeholder="Mail de contacto" required>
+          <input class="form_input"  type="email" name="Mail" id="Mail" placeholder="E-mail" required>
+         </div>
+         <div>
+          <label for="Tel"></label>
+          <input class="form_input" type="tel" name="Tel" id="Tel" placeholder="Teléfono" required>
          </div>
          <div>
           <label for="PassW"></label>
           <input class="form_input"  type="password" name="PassW" id="PassW" placeholder="Contraseña" required>
+         </div>
+         <div>          
+          <input class="form_input"  type="checkbox" name="EnviarInfo"
+          id="EnviarInfo">
+          <label for="EnviarInfo">Acepto recibir publicidad por mail</label>
          </div>
 
          <div >
@@ -69,8 +78,10 @@
      <div class="containeritem">
       <h2 class="titulo"> <i class="fa-solid fa-music"></i> ¡Recomendación!</h2>
       <p>Descubre nueva música para concentrarte y vivir la experiencia de estudiar al máximo</p>
-      <iframe class="video" src="https://www.youtube.com/embed/YE9C1szqW5o" title="Music to Study, Concentrate and Memorize Fast ☯ Alpha Waves ☯ Relaxing Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe  width="700" height="500" src="https://www.youtube.com/embed/YE9C1szqW5o" title="Music to Study, Concentrate and Memorize Fast ☯ Alpha Waves ☯ Relaxing Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </div>
+
+
 
     </section>
 

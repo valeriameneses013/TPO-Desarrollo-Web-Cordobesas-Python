@@ -89,11 +89,13 @@ nav ul li a {
     right: 50px;  
 }
 
-/*header{
+header{
     position: sticky;
     top: 0px;
+  background-color: lightgray;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
-*/
+
 
 
 
@@ -355,6 +357,7 @@ form input, textarea{
     height: 70%;
     position: relative;
     margin-top: 10px;
+    overflow: hidden;
    
 }
 
@@ -375,6 +378,7 @@ header a:visited{
 
 header a:hover{
     color:darksalmon;
+    color:black;
 }
 
 header a:active{
@@ -389,6 +393,7 @@ footer a:visited{
 
 footer a:hover{
     color:darksalmon;
+    color:black;
 }
 
 footer a:active{
@@ -406,6 +411,7 @@ footer a:active{
 .efecto:hover{
     background-color: lightsalmon;
     transition-duration: 2s;
+    color:black;
 }
 
 /*estilos tarjetas profes*/
@@ -418,6 +424,7 @@ footer a:active{
     border: 1px solid rgb(167, 167, 165);
     margin: 10px;
     border-radius: 5%;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);
 }
 .cuerpoTarjetaProfes{
     padding: 10px;

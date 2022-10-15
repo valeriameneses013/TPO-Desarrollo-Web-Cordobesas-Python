@@ -57,12 +57,13 @@ var data= [
 let cad=`<div class="container">`
 for(materia of data){
     cad+=`<div class="tarjeta">
-     <h3>  ${materia.name}</h3>
      <div class="cuerpo">
+     <h3>  ${materia.name}</h3>
         <p>Días: ${materia.day}</p>
         <p>Horario: ${materia.hour}</p>
         <p>Modalidad ${materia.type}</p>
         <p>Valor: ${materia.price}</p>   
+        <br>
         <button class="anotar"></button>
      </div> 
 
@@ -102,3 +103,26 @@ var x = document.getElementsByClassName("anotar")
 x[5].innerHTML = ` 
 <a href="./registro.html" target="_blank">INSCRIBIRSE</a>
 `   
+
+
+/*ENVIO DE FORMULARIO */
+
+const form = document.querySelector("#form")
+
+$form.addEventListener("submit", handleSubmit)
+
+async function handleSubmit(event){
+    event.preventDefault()
+    const form = new FormData(this)
+    const response = await fetch(this.action, {
+        method:this.method,
+        body: form,
+        headers:{
+            "accept": "application/json"
+        }
+     })
+        if(response.ok){
+        this.reset()
+        alert("Gracias por registrarse")
+     }
+}
