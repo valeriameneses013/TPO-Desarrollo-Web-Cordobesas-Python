@@ -92,7 +92,7 @@ nav ul li a {
 header{
     position: sticky;
     top: 0px;
-  background-color: lightgray;
+  background-color: rgba(240, 237, 236, 0.9 );
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 

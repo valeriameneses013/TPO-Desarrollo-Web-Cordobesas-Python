@@ -15,8 +15,7 @@ let cad=`
           <nav>
             <ul>
               <li >
-                <a href="#Inicio">INICIO</a>
-                <!--Aqui tambien le puedo poner a cada "a" la clase centered-->
+                <a href="#Inicio">INICIO</a>             
               <li>
                 <a href="#Materias">MATERIAS</a>
               </li>
@@ -97,9 +96,9 @@ cad=`
 <section>
     <div>
     <ul>
-        <li><a href="#">MAPA DEL SITIO</a></li>
-        <li><a href="#">POLITICAS DE PRIVACIDAD</a></li>
-        <li><a href="#">TERMINOS Y CONDICIONES</a></li>
+        <li><a target="_blank" href="./mapa.html">MAPA DEL SITIO</a></li>
+        <li><a target="_blank" href="./pol.html">POLITICAS DE PRIVACIDAD</a></li>
+        <li><a target="_blank" href="./term.html">TERMINOS Y CONDICIONES</a></li>
     </ul>
     </div>
 </section>
