@@ -3,6 +3,14 @@ let cad=`
         <section>
           <img class="logo" src="./Imagenes/logotemp.png" alt="Logo">
         </section>
+
+        
+        <button id="menu">
+          <span id="menu-abrir">&#9776</span>
+          <span id="menu-cerrar">X</span>
+        </button>
+        
+
         <section>
           <nav>
             <ul>
@@ -36,6 +44,7 @@ let cad=`
             </span>
           </span>
         </section>
+        
 
         <section>
           <nav>
@@ -97,3 +106,16 @@ cad=`
 </div>     
 ` 
 document.getElementById("idfooter").innerHTML=cad;
+
+
+console.log ("sE CARGA EL CODIGO");
+
+window.addEventListener("DOMContentLoaded", (event) =>{
+  const menuBtn = document.getElementById("menu");
+  const nav = document.querySelector(".containerheader nav");
+
+  menuBtn.addEventListener("click", (event)=> {
+    menuBtn.classList.toggle("salir");
+    nav.classList.toggle("visible");
+  });
+});

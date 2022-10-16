@@ -36,7 +36,9 @@ header, main, footer{
     padding: 5px;
           
 }
-
+#menu, #menu-check {
+    display: none;
+}
 nav ul{
     display: flex;
     flex-direction: row;
@@ -81,8 +83,6 @@ nav ul li a {
     text-align: justify; 
 }
 
-
-
 .fijo {
     position: fixed;
     bottom: 50px;
@@ -96,25 +96,21 @@ header{
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
 .grid-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: dodgerblue;
+    background-color:;
     justify-content: space-around; 
     align-items: center;/*Probando para que no desborde*/
 }
 
 .grid-item{
-    background-color: lightgreen; 
+    background-color: ; 
     border: 1px solid black;
     padding: 5px;
     margin: 10px;
     flex: 1;
- 
     text-align: center;
     flex-wrap: wrap;
     align-self: stretch;
@@ -130,7 +126,6 @@ div > img{
 
 .tem{
     padding: 10px;
-
 }
 
 a{
@@ -141,7 +136,7 @@ section>img{
         height: 100%;
         object-fit: cover;
 }
-grid-item tem, ul li{
+.grid-item tem, ul li{
     list-style-type: none; 
     font-size: 0,3em;
     text-align: left;
@@ -200,6 +195,7 @@ grid-item tem, ul li{
 
     80% {margin-left: -500%;}
     90% {margin-left: -500%;}
+
 }
 /*termina estilos slider chico*/
 
@@ -225,7 +221,9 @@ grid-item tem, ul li{
     70% {margin-left: -200%;}
     95% {margin-left: -200%;}
 }
+
 }
+
 /*termina estilos slider mediano*/
 
 @media screen and (min-width: 992px) {
@@ -246,6 +244,8 @@ grid-item tem, ul li{
 
     50% {margin-left: -100%;}
     95% {margin-left: -100%;}
+}
+
 }
 /*termina estilos slider grande*/
 .buscar{
@@ -294,12 +294,12 @@ grid-item tem, ul li{
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);
 }
 .form_titulo, .form_p{
-padding: 1em;
-display: flex;
-align-items: center;
-justify-content: center;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-form input, textarea{
+.form_input, textarea{
     display: block;
     margin:30px;
 }
@@ -355,10 +355,8 @@ form input, textarea{
 .map{
     width: 70%;
     height: 70%;
-    position: relative;
     margin-top: 10px;
     overflow: hidden;
-   
 }
 
 .volver{
@@ -413,8 +411,7 @@ footer a:active{
     transition-duration: 2s;
     color:black;
 }
-
-/*estilos tarjetas profes*/
+/*estilos tarjetas profes
 .containerTarjetaProfes{
     display: flex;
     flex-wrap: nowrap;
@@ -422,9 +419,10 @@ footer a:active{
 }
 .tarjetaProfes{
     border: 1px solid rgb(167, 167, 165);
-    margin: 10px;
-    border-radius: 5%;
-    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0px rgba(54, 43, 94, 0.8);
 }
 .cuerpoTarjetaProfes{
     padding: 10px;
@@ -432,5 +430,50 @@ footer a:active{
 .tarjetaProfes img{
     border-radius: 50%;
     width: 25%;
-        
+}*/
+@media only screen and (max-width: 700px) {
+    .containerheader nav {
+        display: none;
+    }
+    nav.visible{
+        display: block;
+    }
+    #menu {
+        display: block;
+        background-color: ;
+        font-size: 1.2em;
+        font-weight: bold;
+        border: 3px solid rgb(52, 52, 105);
+        border-radius: 0.3em;
+        position: absolute;
+        right: 0.5em;
+        top: .5em;
+        z-index: 9999;
+    }
+    #menu-cerrar{
+        display: none;
+    }
+    #menu.salir #menu-abrir{
+        display: none;
+    }
+    #menu.salir #menu-cerrar{
+        display: block;
+    }
+    .containerheader nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: auto;
+        background-color: gray;
+        padding-top: 0.5em;
+        padding-right: 1.5em;
+        opacity: 0.9;
+    }
+    .containerheader nav ul a {
+        color: aliceblue;
+    }
+    .containerheader nav ul {
+        display: block;
+        text-align: right;
+    }
 }

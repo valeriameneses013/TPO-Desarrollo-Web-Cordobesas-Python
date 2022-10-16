@@ -20,6 +20,9 @@
   <body>
     <header id="idheader">
      
+      
+    
+     
     </header>
     <main>
       <div class="containermain">
@@ -138,8 +141,8 @@
         <section id="Profesores"  class="grid-container">
          
           <div id="app">
-            <div class="containerTarjetaProfes">
-              <div v-for="profesor in arregloProfes" class="tarjetaProfes">
+            <div class="grid-container">
+              <div v-for="profesor in arregloProfes" class="grid-item tarjeta">
                 <img :src="profesor.imagen" alt="imagen">
                 <div class="cuerpoTarjetaProfes">
                   <h4>{{profesor.nombre}}</h4>
@@ -238,11 +241,12 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+            <div class="grid-item">
             <h4>Vías de contacto</h4>
             <p> <i class="fa-solid fa-phone"></i> Atención Profesores (0351) - 11 -111 111</p>
             <p> <i class="fa-solid fa-phone"></i> Atención Alumnos (0351) - 11 -111 111</p>
             <p> <i class="fa-solid fa-at"></i>enviatuconsultar@instituto.com.ar</p>
-            
+            </div>
           </div>
         </section>
       </div>
