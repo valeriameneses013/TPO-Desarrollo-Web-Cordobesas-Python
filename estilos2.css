@@ -1,11 +1,10 @@
 *{
     padding: 0;
-    margin: 0px;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-family: 'Jost', sans-serif;
 }
-
 header{
     background-color: lightblue;
 }
@@ -48,7 +47,6 @@ footer{
     margin: 1em;
     padding: 1em;
     overflow-x: auto;  
-    position: relative; 
 }
 .titulo{
     padding: 5px;
@@ -60,7 +58,6 @@ label{
     position: relative;
 }
 input{
-   
     padding: 5px;
     width: 250px;
 }
@@ -86,30 +83,30 @@ form div{
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);
 }
 .form_titulo, .form_p{
-padding: 1em;
+padding: .5em;
 display: flex;
 align-items: center;
 justify-content: center;
 }
 
-.form_submit{
+/*.form_submit {
     background-color: gray;
     color: #000;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1em;
     padding: .5em 1em;
     border-radius: .5em;
     margin: auto;
     cursor: pointer;
-}
+    max-width: 90%;
+}*/
 
-.form_submit:hover{
+/*.form_submit:hover{
     background-color: lightsalmon;
     transition-duration: 2s;
     color:black;
-}
-
+}*/
 
 .centered{
     display: flex;
@@ -153,16 +150,16 @@ a:active{
 }
 .containeritem iframe{
     border: 1px solid black;
-    padding: 15px;
-    position: absolute;
-    width: 90%;
-    height: 70%;
+    width: auto;
 }
-
-     
+iframe{
+    width: 50vw;
+    height: 50vh;
+}
+ /*    
 button{
   padding: 5px;
-  width: 120px;
+  width: 100px;
   margin-bottom: auto;
   cursor:pointer;
   }
@@ -171,6 +168,17 @@ button:hover{
   background-color: lightsalmon;
   transition-duration: 2s;
   color:black;
+}*/
+.efecto{
+    cursor: pointer;
+    width: 150px;
+    border-radius: 50px;
+}
+
+.efecto:hover{
+    background-color: lightsalmon;
+    transition-duration: 2s;
+    color:black;
 }
 
 
@@ -193,7 +201,8 @@ button:hover{
     text-align:right;
 }
 .anotar{
-    margin 15px;
+    justify-content: center;
+    margin: 15px;
     text-align: justify;
 }
 

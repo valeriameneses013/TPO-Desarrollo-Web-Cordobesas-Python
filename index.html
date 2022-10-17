@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./Imagenes/pila-de-libros-colegio-11367386.ico">
+    <link rel="icon" href="./Imagenes/pila-de-libros-colegio-11367386.ico" />
     <link rel="stylesheet" href="./estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/159db0ef4c.js"
       crossorigin="anonymous"
@@ -18,39 +19,35 @@
     <title>La Academia</title>
   </head>
   <body>
-    <header id="idheader">
-     
-      
-    
-     
-    </header>
+    <header id="idheader"></header>
     <main>
       <div class="containermain">
         <section id="Inicio">
-          <img src="./Imagenes/never-stop-learning-3653430_1280.jpg" alt="Imagen persona estudiando">
+          <img
+            src="./Imagenes/never-stop-learning-3653430_1280.jpg"
+            alt="Imagen persona estudiando"
+          />
         </section>
         <h2 class="centered">OPINIONES DE NUESTROS ALUMNOS</h2>
         <section>
           <div id="tarjetas">
             <div class="container">
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
+              <div class="tarjeta"></div>
+              <div class="tarjeta"></div>
+              <div class="tarjeta"></div>
+              <div class="tarjeta"></div>
+              <div class="tarjeta"></div>
+              <div class="tarjeta"></div>
             </div>
-        </div>
-          
-         
+          </div>
         </section>
         <h2 class="centered">MATERIAS</h2>
         <section id="Materias" class="grid-container">
-          <div class="grid-item tarjeta"> 
-            <span> 
-            <i class="fa-solid fa-2x fa-calculator"></i>
-            </span> 
-           MATEMATICA 
+          <div class="grid-item tarjeta">
+            <span>
+              <i class="fa-solid fa-2x fa-calculator"></i>
+            </span>
+            MATEMATICA
             <div class="grid-item tem">
               <p>Temario</p>
               <div class="grid-item tem">
@@ -62,8 +59,11 @@
                   <li>Cálculo</li>
                 </ul>
               </div>
-              <p>Haz click aquí para más información
-                <a target="_blank" href="./materias.html#Mat" ><i class="fa-sharp fa-solid fa-graduation-cap"></i></a>
+              <p>
+                Haz click aquí para más información
+                <a target="_blank" href="./materias.html#Mat"
+                  ><i class="fa-sharp fa-solid fa-graduation-cap"></i
+                ></a>
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@
           <div class="grid-item tarjeta">
             <span>
               <i class="fa-solid fa-2x fa-flask-vial"></i>
-            </span>            
+            </span>
             QUÍMICA
             <div class="grid-item tem">
               <p>Temario</p>
@@ -84,8 +84,11 @@
                   <li>Ácidos y bases</li>
                 </ul>
               </div>
-              <p>Haz click aquí para más información
-                <a target="_blank" href="./materias.html#Qui"> <i class="fa-sharp fa-solid fa-graduation-cap"></i></a>
+              <p>
+                Haz click aquí para más información
+                <a target="_blank" href="./materias.html#Qui">
+                  <i class="fa-sharp fa-solid fa-graduation-cap"></i
+                ></a>
               </p>
             </div>
           </div>
@@ -102,17 +105,19 @@
                   <li>Mov. rectilíneo</li>
                   <li>Leyes de Newton</li>
                   <li>Fuerza y energía</li>
-                  <li>Trabajo mecánico </li>
+                  <li>Trabajo mecánico</li>
                   <li>Electricidad</li>
                 </ul>
               </div>
-              <p>Haz click aquí para más información
-                <a target="_blank" href="./materias.html#Fis"><i class="fa-sharp fa-solid fa-graduation-cap"></i></a>
+              <p>
+                Haz click aquí para más información
+                <a target="_blank" href="./materias.html#Fis"
+                  ><i class="fa-sharp fa-solid fa-graduation-cap"></i
+                ></a>
               </p>
             </div>
           </div>
 
-          
           <div class="grid-item tarjeta">
             <span>
               <i class="fa-solid fa-2x fa-building-columns"></i>
@@ -129,8 +134,11 @@
                   <li>Oferta Laboral</li>
                 </ul>
               </div>
-              <p>Haz click aquí para más información
-                <a target="_blank" href="./materias.html#Uni"><i class="fa-sharp fa-solid fa-graduation-cap"></i></a>
+              <p>
+                Haz click aquí para más información
+                <a target="_blank" href="./materias.html#Uni"
+                  ><i class="fa-sharp fa-solid fa-graduation-cap"></i
+                ></a>
               </p>
             </div>
           </div>
@@ -138,12 +146,11 @@
 
         <h2 class="centered">STAFF DE PROFESORES</h2>
 
-        <section id="Profesores"  class="grid-container">
-         
+        <section id="Profesores" class="grid-container">
           <div id="app">
             <div class="grid-container">
               <div v-for="profesor in arregloProfes" class="grid-item tarjeta">
-                <img :src="profesor.imagen" alt="imagen">
+                <img :src="profesor.imagen" alt="imagen" />
                 <div class="cuerpoTarjetaProfes">
                   <h4>{{profesor.nombre}}</h4>
                   <p>{{profesor.experiencia}}</p>
@@ -151,114 +158,73 @@
               </div>
             </div>
           </div>
-          
         </section>
 
         <h2 class="centered">CONTACTANOS</h2>
 
         <section id="Contacto" class="grid-container">
           <div id="conteContacto" class="grid-item">
-            <form id="form" action="https://formspree.io/f/mknezlbq" method="POST" class="form_contacto">
+            <form
+              id="form"
+              action="https://formspree.io/f/mknezlbq"
+              method="POST"
+              class="form_contacto"
+            >
               <div class="form_group">
                 <!--NO HAY ESTILO EN CSS DE .FORM_GROUP, PUEDE SER??-->
-                <input
-                  id="Nombre"
-                  type="text"
-                  name="Nombre"
-                  class="form_input"
-                  maxlength="50"
-                  placeholder="Nombre"
-                  required
-                />
+                <input id="Nombre" type="text" name="Nombre" class="form_input" maxlength="50" placeholder="Nombre" required/>
                 <label for="Nombre" class="form_label"></label>
                 <span class="form_line"></span>
               </div>
               <div class="form_group">
-                <input
-                  id="Email"
-                  type="email"
-                  name="Email"
-                  class="form_input"
-                  required
-                  placeholder="Email"
-                />
+                <input id="Email" type="email" name="Email" class="form_input" required placeholder="Email"/>
                 <label for="Email" class="form_label"></label>
                 <span class="form_line"></span>
               </div>
               <div class="form_group">
-                <input
-                  id="Teléfono"
-                  type="tel"
-                  name="Teléfono"
-                  class="form_input"
-                  placeholder="Teléfono"
-                  required
-                />
+                <input id="Teléfono" type="tel" name="Teléfono" class="form_input" placeholder="Teléfono" required/>
                 <label for="Telefono" class="form_label"></label>
                 <span class="form_line"></span>
               </div>
-
               <div class="form_group">
-                <input
-                  id="Asunto"
-                  type="text"
-                  name="Asunto"
-                  class="form_input"
-                  placeholder="Asunto"
-                  required
-                />
+                <input id="Asunto" type="text" name="Asunto" class="form_input" placeholder="Asunto" required/>
                 <label for="Asunto" class="form_label"></label>
                 <span class="form_lime"></span>
               </div>
-
               <div class="form_group">
-                <textarea
-                  name="Mensaje"
-                  id="Mensaje"
-                  cols="20"
-                  rows="3"
-                  class="form_input"
-                  placeholder="Mensaje"
-                  required
+                <textarea name="Mensaje" id="Mensaje" cols="20" rows="3" class="form_input" placeholder="Mensaje" required
                 ></textarea>
               </div>
-              <input class="efecto"
-                type="submit"
-                class="form_submit"
-                value="ENVIAR CONSULTA"
-              />
+              <input class="efecto" type="submit" class="form_submit" value="ENVIAR CONSULTA"/>
             </form>
           </div>
 
-          <div class="grid-item">
+          <div id="contedir" class="grid-item">
             <iframe
-              class="map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26463.56770629921!2d-64.20455815149991!3d-31.417538048255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28e5b9d7fe5%3A0x284de6f3d7b8a60!2sMuseo%20Superior%20de%20Bellas%20Artes%20%7C%20Palacio%20Ferreyra!5e0!3m2!1ses-419!2sar!4v1665025331512!5m2!1ses-419!2sar"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
+              class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26463.56770629921!2d-64.20455815149991!3d-31.417538048255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28e5b9d7fe5%3A0x284de6f3d7b8a60!2sMuseo%20Superior%20de%20Bellas%20Artes%20%7C%20Palacio%20Ferreyra!5e0!3m2!1ses-419!2sar!4v1665025331512!5m2!1ses-419!2sar"
+              width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
             <div class="grid-item">
-            <h4>Vías de contacto</h4>
-            <p> <i class="fa-solid fa-phone"></i> Atención Profesores (0351) - 11 -111 111</p>
-            <p> <i class="fa-solid fa-phone"></i> Atención Alumnos (0351) - 11 -111 111</p>
-            <p> <i class="fa-solid fa-at"></i>enviatuconsultar@instituto.com.ar</p>
+              <h4>Vías de contacto</h4>
+              <p>
+                <i class="fa-solid fa-phone"></i> Atención Profesores (0351) -11 -111 111
+              </p>
+              <p>
+                <i class="fa-solid fa-phone"></i> Atención Alumnos (0351) - 11-111 111
+              </p>
+              <p>
+                <i class="fa-solid fa-at"></i>enviatuconsultar@instituto.com.ar
+              </p>
             </div>
           </div>
         </section>
       </div>
     </main>
-    <footer id="idfooter">
-
-    </footer>
+    <footer id="idfooter"></footer>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="maintp.js"></script>
     <script src="main.js"></script>
     <script src="headerandfooter.js"></script>
     <script src="./form.js"></script>
-
   </body>
 </html>

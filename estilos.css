@@ -13,9 +13,22 @@
 }
 header, main, footer{
     border: 5px solid black;
+}
+header{
+    margin: 10px;
+    position: sticky;
+    top: 0px;
+    background-color: rgba(240, 237, 236, 0.9 );
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+main{
     margin: 10px;
 }
-
+footer{
+    margin: 10px;
+    background-color: rgba(240, 237, 236, 0.9 );
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
 .logo{
     margin: 5px;
     width: 20%;
@@ -87,13 +100,6 @@ nav ul li a {
     position: fixed;
     bottom: 50px;
     right: 50px;  
-}
-
-header{
-    position: sticky;
-    top: 0px;
-  background-color: rgba(240, 237, 236, 0.9 );
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .grid-container{
@@ -273,12 +279,11 @@ section>img{
     text-align: center; 
    
 }
-/*
-#conteContacto{
+
+#conteContacto {
     border: 1px solid black;
-    overflow: hidden;
 }
-*/
+
 .form_contacto{
     width: 90%;
     height: 90%;
@@ -317,7 +322,7 @@ section>img{
     position: absolute;
     top: 0;
 }
-.form_submit{
+/*.form_submit{
     background-color: gray;
     color: #000;
     font-family: 'Roboto', sans-serif;
@@ -327,7 +332,7 @@ section>img{
     border-radius: .5em;
     margin: auto;
     cursor: pointer;
-}
+}*/
 .form_line{
     position: absolute;    
     bottom: 0;
@@ -351,10 +356,14 @@ section>img{
     overflow: hidden;
 }
 */
+#contedir{
+    height: auto;
+    width: 90%;
+}
 
 .map{
-    width: 70%;
-    height: 70%;
+    width: auto;
+    height: 50vh;
     margin-top: 10px;
     overflow: hidden;
 }
@@ -397,7 +406,6 @@ footer a:hover{
 footer a:active{
     color:white;
     background-color: grey;
-    
 }
 
 .efecto{
@@ -476,4 +484,5 @@ footer a:active{
         display: block;
         text-align: right;
     }
+    
 }

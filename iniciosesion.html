@@ -31,27 +31,31 @@
 
 <body>
     <form class="form">
-        <h2 class="form_titulo">Inicia Sesión</h2>
-        <p class="form_p">¿Aún no tenes cuenta? <a href="./registro.html" class="form_link"> Ingresa aquí</a></p> 
+        <h2 class="form_titulo">Mi Cuenta</h2>
+         
 
         <div class="form_container">
             <div class="form_group">
-                <input type="text" id="Nombre" class="form_input" placeholder="Nombre">
+                <input type="text" id="Nombre" class="form_input" placeholder="Usuario o Correo Electrónico" size="22">
                 <label for="Nombre" class="form_label"></label>
                 <span class="form_line"></span>
             </div>
             <div class="form_group">
-                <input type="text" id="Usuario" class="form_input" placeholder="Usuario">
-                <label for="Usuario" class="form_label"></label>
-                <span class="form_line"></span>
-            </div>
-            <div class="form_group">
-                <input type="password" id="Contraseña" class="form_input" placeholder="Contraseña">
+                <input type="password" id="Contraseña" class="form_input" placeholder="Contraseña" size="22">
                 <label for="Contraseña" class="form_label"></label>
                 <span class="form_line"></span>
             </div>
+            <div class="form_group">
+                <input class="form_input" type="checkbox" id="Recordarme" value="forever">
+                <label for="Recordarme">Recordarme</label>                                     
+            </div>
+            <div>
+                <a href="https://laacademia.com.ar/escritorio/retrieve-password">¿Olvidaste tu contraseña?</a>
+            </div>
 
-            <input  type="submit" class="form_submit" value="Acceder">
+            <input type="submit" class="efecto" value="Acceder">
+
+            <p class="form_p">¿Aún no tenes cuenta? <a href="./registro.html" class="form_link"> Ingresa aquí</a></p>
             
         </div>
     </form>

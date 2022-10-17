@@ -1,4 +1,4 @@
-let cad=`
+let cad = `
 <div class="containerheader">
         <section>
           <img class="logo" src="./Imagenes/logotemp.png" alt="Logo">
@@ -28,6 +28,9 @@ let cad=`
               <li>
                 <a href="./registro.html" target="_blank">REGISTRO</a>
               </li>
+              <li>
+              <a href="iniciosesion.html" target="_blank">MI CUENTA</a>
+              </li>
             </ul>
           </nav>
         </section>
@@ -44,16 +47,10 @@ let cad=`
           </span>
         </section>
         
-
-        <section>
-          <nav>
-            <a href="iniciosesion.html" target="_blank">INICIAR SESION</a>
-          </nav>
-        </section>
       </div>
       `
-document.getElementById("idheader").innerHTML=cad;
-cad=`
+document.getElementById("idheader").innerHTML = cad;
+cad = `
 <div class="containerfooter">
 <section>
     <div class="centered">
@@ -73,6 +70,9 @@ cad=`
         </li>
         <li>
         <a href="./registro.html" target="_blank">REGISTRO</a>
+        </li>
+        <li>
+        <a href="iniciosesion.html" target="_blank">MI CUENTA</a>
         </li>
     </ul>
     </div>
@@ -103,17 +103,15 @@ cad=`
     </div>
 </section>
 </div>     
-` 
-document.getElementById("idfooter").innerHTML=cad;
+`
+document.getElementById("idfooter").innerHTML = cad;
 
 
-console.log ("sE CARGA EL CODIGO");
-
-window.addEventListener("DOMContentLoaded", (event) =>{
+window.addEventListener("DOMContentLoaded", (event) => {
   const menuBtn = document.getElementById("menu");
   const nav = document.querySelector(".containerheader nav");
 
-  menuBtn.addEventListener("click", (event)=> {
+  menuBtn.addEventListener("click", (event) => {
     menuBtn.classList.toggle("salir");
     nav.classList.toggle("visible");
   });
