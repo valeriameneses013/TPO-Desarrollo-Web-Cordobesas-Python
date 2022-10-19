@@ -1,11 +1,11 @@
-let url="./opiniones.json"
+let url="https://mocki.io/v1/b3649a05-4111-4686-bc00-fc2b5e0f97a7"
 let datos = [];
 fetch(url)
     .then(response => response.json())
     .then(data => {
 
         console.log(data)
-        datos = data.arreglo
+        datos = data
         console.log(datos)
         
 
