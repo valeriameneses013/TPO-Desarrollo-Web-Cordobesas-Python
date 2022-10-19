@@ -6,7 +6,8 @@
     font-family: 'Jost', sans-serif;
 }
 header{
-    background-color: lightblue;
+    background-color: rgba(240, 237, 236, 0.9 );
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 nav, ul, li, a{
     text-decoration: none;  
@@ -19,21 +20,15 @@ main{
     background-color:lightcyan;
 }
 footer{
-    background-color: lightgoldenrodyellow;
-}
-.form_input{
-    border: none;
-    outline: none;
-    border-bottom: 1px solid grey;
-    font-size: 1rem;
-    max-width:max-content;
+    background-color: rgba(240, 237, 236, 0.9 );
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 .containerheader{
     display: flex;
     flex-direction:row;
     flex-wrap: nowrap;
     padding: 15px;
-    align-items:left;
+    align-items:center;
     justify-content: space-around;
 }
 .containermain{
@@ -43,10 +38,18 @@ footer{
     justify-content: space-around;
     width: 100%;
 }
+.containermain section{
+    /*border: 2px solid blue;*/
+    height:auto;
+}
 .containeritem{
     margin: 1em;
     padding: 1em;
     overflow-x: auto;  
+}
+iframe{
+    width: 100vw;
+    height: 50vh;
 }
 .titulo{
     padding: 5px;
@@ -73,9 +76,8 @@ input{
 form div{
     padding: 5px;
 }
-
 .form{
-    margin: auto;
+    margin: 2em auto;
     width: 90%;
     max-width: 300px;
     padding: .5em;
@@ -83,31 +85,18 @@ form div{
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .3);
 }
 .form_titulo, .form_p{
-padding: .5em;
-display: flex;
-align-items: center;
-justify-content: center;
+    padding: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-/*.form_submit {
-    background-color: gray;
-    color: #000;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 1em;
-    padding: .5em 1em;
-    border-radius: .5em;
-    margin: auto;
-    cursor: pointer;
-    max-width: 90%;
-}*/
-
-/*.form_submit:hover{
-    background-color: lightsalmon;
-    transition-duration: 2s;
-    color:black;
-}*/
-
+.form_input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    font-size: 1rem;
+    max-width:max-content;
+}
 .centered{
     display: flex;
     justify-content: center;
@@ -133,13 +122,13 @@ a:active{
     padding: 0.5em;
     justify-content: space-around;
     align-items: center;
-    border: 3px solid green;
+    /*border: 3px solid green;*/
     padding: 1em;
     width: 100%;
     height: auto;
 }
 .containerfooter section{
-    border: 2px solid maroon;
+    /*border: 2px solid maroon;*/
     overflow-x: auto;
 }
 .containerfooter section nav a{
@@ -152,11 +141,8 @@ a:active{
     border: 1px solid black;
     width: auto;
 }
-iframe{
-    width: 50vw;
-    height: 50vh;
-}
- /*    
+
+   
 button{
   padding: 5px;
   width: 100px;
@@ -168,7 +154,7 @@ button:hover{
   background-color: lightsalmon;
   transition-duration: 2s;
   color:black;
-}*/
+}
 .efecto{
     cursor: pointer;
     width: 150px;

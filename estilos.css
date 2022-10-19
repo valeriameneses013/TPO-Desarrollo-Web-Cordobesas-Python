@@ -12,7 +12,7 @@
     padding: 5px;
 }
 header, main, footer{
-    border: 5px solid black;
+    /*border: 5px solid black;*/
 }
 header{
     margin: 10px;
@@ -33,8 +33,8 @@ footer{
     margin: 5px;
     width: 20%;
     height: 50%;
+    border-radius: 100%;
 }
-
 .containerheader{
     display: flex;
     flex-direction: row;
@@ -42,15 +42,11 @@ footer{
     padding: 5px;
     justify-content: space-around;
     align-items: center;
-    border:3px solid red;
+    /*border:3px solid red;*/
 }
 .containerheader section{
-    border: 2px solid blueviolet;
+    /*border: 2px solid blueviolet;*/
     padding: 5px;
-          
-}
-#menu, #menu-check {
-    display: none;
 }
 nav ul{
     display: flex;
@@ -61,15 +57,18 @@ nav ul{
 nav ul li a {
     text-decoration: none;
     display: inline-block;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     padding: 5px;
+}
+#menu, #menu-check {
+    display: none;
 }
 .containermain{
     flex-direction: row;
-    border: 3px solid tomato;
+    /*border: 3px solid tomato;*/
 }
 .containermain section{
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
     height:auto;
 }
 .containerfooter{
@@ -79,10 +78,10 @@ nav ul li a {
     padding: 5px;
     justify-content: space-around;
     align-items: center;
-    border: 3px solid green;
+    /*border: 3px solid green;*/
 }
 .containerfooter section{
-    border: 2px solid maroon;
+    /*border: 2px solid maroon;*/
 }
 .containerfooter section nav a{
     padding: 10px;
@@ -106,7 +105,6 @@ nav ul li a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color:;
     justify-content: space-around; 
     align-items: center;/*Probando para que no desborde*/
 }
@@ -125,8 +123,8 @@ nav ul li a {
 }
 
 div > img{
-    width: 10%;
-    border: 1px solid black;
+    width: 20%;
+    /*border: 1px solid black;*/
     border-radius: 100%;
 }
 
@@ -150,7 +148,7 @@ section>img{
 
 /* agrego estilos slider chico*/
 #tarjetas{
-    border: 5px solid green;
+    /*border: 5px solid green;*/
     width: 100%;
     height: 100%;
     margin: 0px auto;
@@ -172,7 +170,7 @@ section>img{
     margin: 1em;
     padding: 1em;
     border-radius: 10px;
-    box-shadow: 0 10px 10px 0px rgba(54, 43, 94, 0.8);
+    box-shadow: 0 10px 10px 0px rgba(54, 43, 94, 0.5);
 }
 .tarjeta img{
     border-radius: 50%;
@@ -256,30 +254,48 @@ section>img{
 /*termina estilos slider grande*/
 .buscar{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    }
-
-.buscar input{
-   font-size: 15px;
-   color:#000;
-   outline: none;
-   border-radius: 30px;
-   padding: 5px;
-   width: 80%;
-   height: 40%;
-  }
-
-.btn{
-   padding: 2px;
-   position: inherit;   
-  }
-.btn button i{
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.buscar_texto{
+    border: none;
+    background: none;
+    outline: none;
+    border-radius: 30px;
+    color: black;
+    font-size: 1em;
+    float: left;
+    line-height: 2em;
+    transition: .3s;
+    width: 0;
+}
+.button{
+    width: 1.5em;
+    height: 1.5em;
+    text-decoration: none;
+    color: black;
+    font-size: .8em;
     cursor: pointer;
     text-align: center; 
-   
 }
-
+/*Responsive Busqueda*/
+@media screen and (min-width:480px){
+    .buscar:hover > .buscar_texto{
+        width: 100px;
+    }
+}
+@media screen and (min-width:768px){
+    .buscar:hover > .buscar_texto{
+        width: 150px;
+    }
+}
+@media screen and (min-width:1024px){
+    .buscar:hover > .buscar_texto{
+        width: 300px;
+    }
+}
+/*Termina responsive busqueda*/
 #conteContacto {
     border: 1px solid black;
 }
@@ -322,25 +338,12 @@ section>img{
     position: absolute;
     top: 0;
 }
-/*.form_submit{
-    background-color: gray;
-    color: #000;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: .5em 1em;
-    border-radius: .5em;
-    margin: auto;
-    cursor: pointer;
-}*/
 .form_line{
     position: absolute;    
     bottom: 0;
     left: 0;
     width: 100%;
 }
-
-
 /*
 .grid-container-contacto{
     display: flex;
@@ -439,7 +442,7 @@ footer a:active{
     border-radius: 50%;
     width: 25%;
 }*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
     .containerheader nav {
         display: none;
     }
@@ -451,11 +454,11 @@ footer a:active{
         background-color: ;
         font-size: 1.2em;
         font-weight: bold;
-        border: 3px solid rgb(52, 52, 105);
+        border: 2px solid rgb(52, 52, 105);
         border-radius: 0.3em;
         position: absolute;
-        right: 0.5em;
-        top: .5em;
+        right: 1em;
+        top: 1.8em;
         z-index: 9999;
     }
     #menu-cerrar{
@@ -473,7 +476,7 @@ footer a:active{
         right: 0;
         height: auto;
         background-color: gray;
-        padding-top: 0.5em;
+        padding-top: .5em;
         padding-right: 1.5em;
         opacity: 0.9;
     }
@@ -484,5 +487,7 @@ footer a:active{
         display: block;
         text-align: right;
     }
-    
+    .containerheader .logo{
+        width: 10vh;
+    }
 }

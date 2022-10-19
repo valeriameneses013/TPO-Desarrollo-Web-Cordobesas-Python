@@ -37,14 +37,12 @@ let cad = `
 
 
         <section>
-          <span class="buscar">
-            <input type="text" placeholder="Buscar" required />
-            <span class="btn zoom">
-              <button>
-                <i class="fa-solid fa-2x fa-magnifying-glass" ></i>
-              </button>
-            </span>
-          </span>
+          <div class="buscar">
+            <input type="text" class="buscar_texto" placeholder="Buscar" required />
+                <a href="" class="button">
+                <i class="fa-solid fa-2x fa-magnifying-glass"></i>
+              </a>
+          </div>    
         </section>
         
       </div>
@@ -116,3 +114,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     nav.classList.toggle("visible");
   });
 });
+
+
+
