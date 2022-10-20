@@ -362,8 +362,7 @@ header a:visited{
 }
 
 header a:hover{
-    color:darksalmon;
-    color:black;
+    color:darksalmon;    
 }
 
 header a:active{
@@ -378,7 +377,7 @@ footer a:visited{
 
 footer a:hover{
     color:darksalmon;
-    color:black;
+   
 }
 
 footer a:active{

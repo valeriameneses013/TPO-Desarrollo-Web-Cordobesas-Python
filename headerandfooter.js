@@ -41,7 +41,7 @@ let cad = `
             <input type="text" class="buscar_texto" placeholder="Buscar" required />
                 <a href="" class="button">
                 <i class="fa-solid fa-2x fa-magnifying-glass"></i>
-              </a>
+                </a>
           </div>    
         </section>
         
