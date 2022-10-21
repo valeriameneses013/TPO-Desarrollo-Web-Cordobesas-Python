@@ -30,19 +30,24 @@
 </header>
 
 <body>
-    <form class="form">
+    <form action="" method="post" class="form" id="form">
         <h2 class="form_titulo">Mi Cuenta</h2>
          
 
         <div class="form_container">
             <div class="form_group">
-                <input type="text" id="Nombre" class="form_input" placeholder="Usuario o Correo Electrónico" size="22">
-                <label for="Nombre" class="form_label"></label>
+                <input type="text" id="nombre" class="form_input" placeholder="Usuario" size="22">
+                <label for="nombre" class="form_label"></label>
                 <span class="form_line"></span>
             </div>
             <div class="form_group">
-                <input type="password" id="Contraseña" class="form_input" placeholder="Contraseña" size="22">
-                <label for="Contraseña" class="form_label"></label>
+              <input type="email" id="email" class="form_input" placeholder="Email" size="22">
+              <label for="email" class="form_label"></label>
+              <span class="form_line"></span>
+          </div>
+            <div class="form_group">
+                <input type="password" id="password" class="form_input" placeholder="Contraseña" size="22">
+                <label for="password" class="form_label"></label>
                 <span class="form_line"></span>
             </div>
             <div class="form_group">
@@ -56,6 +61,7 @@
             <input type="submit" class="efecto" value="Acceder">
 
             <p class="form_p">¿Aún no tenes cuenta? <a href="./registro.html" class="form_link"> Ingresa aquí</a></p>
+            <p class="warnings" id="warnings"></p>
             
         </div>
     </form>
@@ -88,8 +94,7 @@
       </div>
     </footer>
 
-      <script src="./main.js"></script>
-
-    
-</body>
+    <script src="main.js"></script>
+    <script src="iniciosesion.js"></script>
+  </body>
 </html>
