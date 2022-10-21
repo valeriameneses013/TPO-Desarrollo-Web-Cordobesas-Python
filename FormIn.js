@@ -33,9 +33,10 @@ document.addEventListener("DOMContentLoaded", function() {
  /*ACA NO SE TENDRIAN QUE SINCRONIZAR LAS DOS TAREAS? */
 
 
+ 
  /* ENVIO DE FORMULARIO CON FORMSPREE */
 
- const $form = document.querySelector("#form")
+const $form = document.querySelector("#form")
 
 $form.addEventListener("submit", handleSubmit)
 
