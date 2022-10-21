@@ -15,16 +15,16 @@ header{
     margin: 2px;
     position: sticky;
     top: 0px;
-    background-color: rgba(240, 237, 236, 0.9 );
+    background-color: rgba(20, 93, 56, 0.3);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 main{
     margin: 10px;
-    background-color: rgba(102, 51, 153, 0.5);
+    background-color: rgba(80, 88, 171, 0.5);
 }
 footer{
     margin: 2px;
-    background-color: rgba(240, 237, 236, 0.9 );
+    background-color: rgba(20, 93, 56, 0.3);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 .logo{
@@ -99,7 +99,7 @@ nav ul li a {
 }
 
 .grid-item{
-    /* background-color: rgba(247, 100, 149, 0.9);  */
+    /* background-color: rgba(247, 100, 149, 0.9);   */
     border: 1px solid black;   
     padding: 5px;
     margin: 10px;
@@ -160,7 +160,7 @@ section>img{
     padding: 1em;
     border-radius: 10px;
     box-shadow: 0 10px 10px 0px rgba(54, 43, 94, 0.5);
-    background-color: rgba(240, 128, 128, 0.3);
+    background-color: pink;
 }
 .tarjeta img{
     border-radius: 50%;
