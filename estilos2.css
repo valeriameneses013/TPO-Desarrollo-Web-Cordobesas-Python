@@ -209,6 +209,15 @@ button:hover{
     text-align: justify;
 }
 
+.anotar:hover{
+    background-color: lightgray;
+    color: black;
+    transition: 0.2s;
+    width: 120px;
+    height: 50px;
+
+}
+
 div>h3{
     text-align: center;
 }

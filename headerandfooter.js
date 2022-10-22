@@ -94,9 +94,9 @@ cad = `
 <section>
     <div>
     <ul>
-        <li><a target="_blank" href="./mapa.html">MAPA DEL SITIO</a></li>
-        <li><a target="_blank" href="./pol.html">POLITICAS DE PRIVACIDAD</a></li>
-        <li><a target="_blank" href="./term.html">TERMINOS Y CONDICIONES</a></li>
+        <li><a target="_blank" href="https://cajaltradicional.com.ar/sitemap/">MAPA DEL SITIO</a></li>
+        <li><a target="_blank" href="https://www.classgap.com/es-ar/info/privacy">POLITICAS DE PRIVACIDAD</a></li>
+        <li><a target="_blank" href="https://www.classgap.com/es-ar/info/terms">TERMINOS Y CONDICIONES</a></li>
     </ul>
     </div>
 </section>

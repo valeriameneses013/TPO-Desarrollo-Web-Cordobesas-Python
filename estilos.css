@@ -111,6 +111,10 @@ nav ul li a {
     justify-content: space-around;
 }
 
+.grid-item:hover{
+    background-color: rgba(148, 18, 171, 0.5);
+}
+
 div > img{
     width: 25%;
     border-radius: 100%;
