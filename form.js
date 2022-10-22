@@ -1,11 +1,11 @@
-/* VALIDACION DE FORMULARIO */
+/* VALIDACION DE FORMULARIO REGISTRO*/
 
 document.addEventListener("DOMContentLoaded", function() {
    document.getElementById("form").addEventListener('submit', validarFormulario); 
  });
  
- function validarFormulario(evento) {
-   evento.preventDefault();
+ function validarFormulario(event) {
+   event.preventDefault();
    var nombre = document.getElementById('nombre').value;
    if(nombre.length == 0) {
      alert('No ingresaste tu Nombre');

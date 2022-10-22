@@ -1,12 +1,12 @@
 
-/* VALIDACION DE FORMULARIO */
+/* VALIDACION DE FORMULARIO DE CONSULTA - EN INDEX*/
 
 document.addEventListener("DOMContentLoaded", function() {
    document.getElementById("form").addEventListener('submit', validarFormulario); 
  });
  
- function validarFormulario(evento) {
-   evento.preventDefault();
+ function validarFormulario(event) {
+   event.preventDefault();
    var Nombre = document.getElementById('Nombre').value;
    if(Nombre.length == 0) {
      alert('No ingresaste tu nombre');
