@@ -34,19 +34,19 @@ fetch(url)
 
     var x = document.getElementsByClassName("hlink")
     x[0].innerHTML = ` 
-    <a href="./index.html#Inicio" target="_blank">INICIO</a>
+    <a href="../index.html#Inicio">INICIO</a>
     `
     var x = document.getElementsByClassName("hlink")
     x[1].innerHTML = ` 
-    <a href=" ./index.html#Materias" target="_blank">MATERIAS</a>
+    <a href=" ../index.html#Materias">MATERIAS</a>
     `
     var x = document.getElementsByClassName("hlink")
     x[2].innerHTML = ` 
-    <a href="./index.html#Profesores" target="_blank">PROFESORES</a>
+    <a href="../index.html#Profesores">PROFESORES</a>
     `
     var x = document.getElementsByClassName("hlink")
     x[3].innerHTML = ` 
-    <a href="./index.html#Contacto" target="_blank" >CONTACTO</a>
+    <a href="../index.html#Contacto">CONTACTO</a>
     `
      /* TERMINA HEADER */
 
@@ -69,7 +69,7 @@ fetch(url)
      
      var x = document.getElementsByClassName("flink")
      x[3].innerHTML = ` 
-     <a href="./index.html#Contacto" target="_blank" >CONTACTO</a>
+     <a href="./index.html#Contacto">CONTACTO</a>
      `
 
      var x = document.getElementsByClassName("redes")

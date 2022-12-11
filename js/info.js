@@ -1,4 +1,4 @@
-/* INFORMACION */
+/* INFORMACION 
 
 var data= [
 {
@@ -51,9 +51,9 @@ var data= [
 },
 
 ]
-
+*/
 /*FUNCION =RICK&MORTY */
-
+/*
 let cad=`<div class="container">`
 for(materia of data){
     cad+=`<div class="tarjeta">
@@ -73,9 +73,10 @@ for(materia of data){
 cad+=` </div> `
 console.log(cad)
 document.getElementById("materias").innerHTML=cad
-
+*/
 
 /* FUNCION BOTON - REVISAR */
+
 var x = document.getElementsByClassName("anotar")
 x[0].innerHTML = ` 
 <a href="./registro.html" target="_blank">INSCRIBIRSE</a>
@@ -103,5 +104,6 @@ var x = document.getElementsByClassName("anotar")
 x[5].innerHTML = ` 
 <a href="./registro.html" target="_blank">INSCRIBIRSE</a>
 `   
+
 
 

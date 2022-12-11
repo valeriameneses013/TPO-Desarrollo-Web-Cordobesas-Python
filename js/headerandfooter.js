@@ -26,10 +26,16 @@ let cad = `
                 <a href="#Contacto">CONTACTO</a>
               </li>
               <li>
-                <a href="./registro.html" target="_blank">REGISTRO</a>
+                <a href="./registro.html">REGISTRO</a>
               </li>
               <li>
-              <a href="iniciosesion.html" target="_blank">MI CUENTA</a>
+              <a href="./iniciosesion.html">MI CUENTA</a>
+              </li>
+              <li>
+              <a href="../TPO/indexusr.html">USUARIOS</a>
+              </li>
+              <li>
+              <a href="../TPO/index_materia.html">GESTION MATERIAS</a>
               </li>
             </ul>
           </nav>
@@ -67,10 +73,10 @@ cad = `
         <a href="#Contacto">CONTACTO</a>
         </li>
         <li>
-        <a href="./registro.html" target="_blank">REGISTRO</a>
+        <a href="./registro.html">REGISTRO</a>
         </li>
         <li>
-        <a href="iniciosesion.html" target="_blank">MI CUENTA</a>
+        <a href="./iniciosesion.html">MI CUENTA</a>
         </li>
     </ul>
     </div>

@@ -31,19 +31,24 @@
           </nav>
   </header>
 
-
- <main>
-
-<div id="materias" class="animate__animated animate__bounce">  
-</div>
-
-
-
-
+<main>
+  <div class="container" id="app">
+     <section v-for="materia in materias">
+      <div class="tarjeta">
+        <div class="cuerpo">
+         <h3>{{materia.nombre}}</h3>
+           <p>{{materia.dias}}</p>
+           <p>Turno:{{materia.horario}}</p>
+           <p>Modalidad:{{materia.modalidad}}</p>
+           <p>Costo:{{materia.costo}}</p>  
+           <p>Duración:{{materia.duracion}}minutos</p> 
+           <br>
+          <button class="anotar"></button>
+        </div> 
+     </section>
+  </div>
 </main>
-
-
-    <footer>
+<footer>
         <div class="containerfooter">
           <section>
             <div class="centered">
@@ -66,12 +71,14 @@
               <a class="redes"></a>
               <a class="redes"></a>
               <a class="redes"></a>
-            </nav>
+            </nav> 
           </section>        
         </div>
-      </footer>
+</footer>
 
-      <script src="./main.js"></script>
-      <script src="./info.js"></script>
+      <script src="./js/main.js"></script>
+      <script src="./js/info.js"></script>
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+      <script src="./TPO/js/main_materia.js"></script>
 </body>
 </html>
