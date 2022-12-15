@@ -36,6 +36,7 @@
                             <th>Mail</th>
                             <th>Celular</th>
                             <th>Clave</th>
+                            <th>Imagen</th>
                             <th>Acciones</th>
                         </tr>
                         <tr v-for="usuario in usuarios">
@@ -47,9 +48,13 @@
                             <td>{{usuario.mail}}</td>
                             <td>{{usuario.celular}}</td>
                             <td>{{usuario.clave}}</td>
+                            <td>
+                                <img width="100" :src="usuario.imagen" :alt="">
+                            </td>
+
 
                             <td>
-                                <a :href="'updateusr.html?id='+usuario.id+'&nombre='+usuario.nombre+'&apellido='+usuario.apellido+'&edad='+usuario.edad+'&fecNac='+usuario.fecNac+'&mail='+usuario.mail+'&celular='+usuario.celular+'&clave='+usuario.clave" class="btn btn-primary">Modificar</a>
+                                <a :href="'updateusr.html?id='+usuario.id+'&nombre='+usuario.nombre+'&apellido='+usuario.apellido+'&edad='+usuario.edad+'&fecNac='+usuario.fecNac+'&mail='+usuario.mail+'&celular='+usuario.celular+'&clave='+usuario.clave+'&imagen='+usuario.imagen" class="btn btn-primary">Modificar</a>
                                 <button v-on:click="eliminar(usuario.id)" class="btn btn-danger">Eliminar</button>
                             </td>
                         </tr>

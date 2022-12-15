@@ -7,6 +7,7 @@ function guardar() {
     let m = document.getElementById("txtMail").value
     let t = document.getElementById("txtCelular").value 
     let c = document.getElementById("txtClave").value
+    let im = document.getElementById("txtImagen").value
     
  
     let usuario = {
@@ -16,7 +17,8 @@ function guardar() {
         fecNac: fn,
         mail: m,
         celular: t,
-        clave: c
+        clave: c,
+        imagen: im
     }
     let url = "http://localhost:5000/usuarios"
     var options = {

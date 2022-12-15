@@ -13,6 +13,7 @@ document.getElementById("txtFecNac").value = decodeURIComponent(parts[4][1])
 document.getElementById("txtMail").value = decodeURIComponent(parts[5][1])
 document.getElementById("txtCelular").value = decodeURIComponent(parts[6][1])
 document.getElementById("txtClave").value = decodeURIComponent(parts[7][1])
+document.getElementById("txtImagen").value = decodeURIComponent(parts[8][1])
 
  
 function modificar() {
@@ -24,6 +25,7 @@ function modificar() {
     let m = document.getElementById("txtMail").value
     let t = document.getElementById("txtCelular").value 
     let c = document.getElementById("txtClave").value
+    let im = document.getElementById("txtImagen").value
     let usuario = {
         nombre: n,
         apellido: a,
@@ -31,7 +33,8 @@ function modificar() {
         fecNac: fn,
         mail: m,
         celular: t,
-        clave: c
+        clave: c,
+        imagen: im
     }
     let url = "http://localhost:5000/usuarios/"+id
     var options = {

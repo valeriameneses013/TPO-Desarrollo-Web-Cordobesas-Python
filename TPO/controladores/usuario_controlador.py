@@ -31,8 +31,9 @@ def create_usuario():
     mail=request.json['mail']
     celular=request.json['celular']
     clave=request.json['clave']
+    imagen=request.json['imagen']
 
-    new_usuario=Usuario(nombre,apellido,edad,fecNac,mail,celular,clave)
+    new_usuario=Usuario(nombre,apellido,edad,fecNac,mail,celular,clave,imagen)
     db.session.add(new_usuario)
     db.session.commit()
     return usuario_schema.jsonify(new_usuario)    
@@ -48,6 +49,7 @@ def update_usuario(id):
     mail=request.json['mail']
     celular=request.json['celular']
     clave=request.json['clave']
+    imagen=request.json['imagen']
 
     usuario.nombre=nombre
     usuario.apellido=apellido
@@ -56,6 +58,7 @@ def update_usuario(id):
     usuario.mail=mail
     usuario.celular=celular
     usuario.clave=clave
+    usuario.imagen=imagen
     
     db.session.commit()
     return usuario_schema.jsonify(usuario)    
